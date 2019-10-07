@@ -1,2 +1,2 @@
-# smart-dea
-(Space) Design Engineering Assistant
+# smart-nlp
+Strathclyde Mechanical and Aerospace Research Toolboxes for Natural Language Processing
