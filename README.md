@@ -1,7 +1,7 @@
 # smart-nlp
 Strathclyde Mechanical and Aerospace Research Toolboxes for Natural Language Processing
 
-## Table of contents
+## Available Repositories
 * [Topic Modeling](#TopicModeling)
 
 ## Topic Modeling
