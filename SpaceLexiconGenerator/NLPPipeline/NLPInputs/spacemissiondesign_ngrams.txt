@@ -1,0 +1,36 @@
+absolute pointing error
+attitude and orbit control system
+baseline design
+data handling
+data handling system
+design drivers
+electrical power supply system
+end of nominal operational lifetime
+focal plane
+gamma ray
+ground segment
+ground station
+guidance navigation and control
+launch vehicle
+low earth orbit
+magnetic field
+mission analysis
+molniya orbit
+multi layer insulation
+payload
+payload resources and requirements document
+reaction wheel
+relative pointing error
+remote sensing
+service module
+spacecraft
+single event upset
+solar array
+solar cell
+solar panel
+solar power
+sun synchronous orbit
+thermal control
+thermal control system
+transfer orbit
+upper stage
