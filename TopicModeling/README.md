@@ -24,8 +24,9 @@ More about the project: http://icelab.uk/projects/research-projects/dea/ \
 Publications: https://www.researchgate.net/project/Design-Engineering-Assistant-DEA-for-Space-Mission-Design
 
 ## Latent Dirichlet Allocation (LDA) for Space Mission Design 
-The code stored in this repository was used to generate results presented at the International Astronautical Congress 2019, in Washington DC (USA), in the session on 'Knowledge Management for space activities in the digital era'. The link to the paper,
-'The automatic categorisation of space mission requirements for the Design Engineering Assistant' (IAC-19,D5,2,7,x51013), will be provided soon.
+The code stored in this repository was used to generate results presented at the International Astronautical Congress 2019, in Washington DC (USA), in the session on 'Knowledge Management for space activities in the digital era'. The paper,
+'The automatic categorisation of space mission requirements for the Design Engineering Assistant' (IAC-19,D5,2,7,x51013), is available at [researchgate](https://www.researchgate.net/publication/337256904_The_automatic_categorisation_of_space_mission_requirements_for_the_Design_Engineering_Assistant).
+
 
 **The code presented here allows to train and evaluate unsupervised, supervised and updated LDA models, a common TM method, from a wikipedia-based space mission design corpus. The models can be evaluated via the categorisation of space mission requirements, extracted from freely-available European Space Agency mission documents.**
  
