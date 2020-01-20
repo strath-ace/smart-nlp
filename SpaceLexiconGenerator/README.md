@@ -54,7 +54,7 @@ you may use the following BibTex entry or equivalent:
       publisher = {AIAA},\
       address = {Orlando, USA},\
       note={\url{https://arc.aiaa.org/doi/10.2514/6.2020-2253}},\
-      language={English}}\
+      language={English}}
       
 ## License
 This code is licensed under Version 2.0 of the Mozilla Public License.

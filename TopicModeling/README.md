@@ -48,8 +48,19 @@ Parsed wikipedia pages and requirements, under .json format, are already availab
 ## Citation
 If you use this code, we kindly request that you cite our research:
 
-Audrey Berquand, Iain McDonald, Annalisa Riccardi, and Yashar Moshfeghi, "The automatic categorisation of space mission requirements for the Design Engineering Assistant".
-In: *Proceedings of the 70th International Astronautical Congress (IAC)*. Washington D.C., United States, October 2019.
+If you use this code, we kindly request that you cite our research, 
+you may use the following BibTex entry or equivalent:
+
+@inproceedings{berquandTM, \
+      title = {{The automatic categorisation of space mission requirements for the Design Engineering Assistant}},\
+      author = {Audrey Berquand and Iain McDonald and Annalisa Riccardi and Yashar Moshfeghi},\
+      booktitle = {{Proceedings of the 70th International Astronautical Congress (IAC)}},\
+      year = 2019,\
+      month = October,\
+      publisher = {IAF},\
+      address = {Washington D.C., USA},\
+      language={English}}
+
 
 ## License
 This code is licensed under Version 2.0 of the Mozilla Public License.
