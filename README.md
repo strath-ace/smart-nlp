@@ -4,6 +4,7 @@ Strathclyde Mechanical and Aerospace Research Toolboxes for Natural Language Pro
 ## Available Repositories
 * [Space Lexicon Generator](#SpaceLexiconGenerator)
 * [Topic Modeling](#TopicModeling)
+* [Engineering Models Migration to Knowledge Graph](#EngineeringModelsMigrationtoKnowledgeGraph)
 
 ## Space Lexicon Generator
 The code stored in this repository was used to generate the results of the paper "Space mission design ontology: extraction of
@@ -22,3 +23,12 @@ The repository includes
 * A first 'Space Mission Design' wikipedia corpus, the requirements corpus and the Natural Language Processing pipeline used to process them,
 * Examples of unsupervised and semi-supervised topics dictionaries, labeled and validated by Human annotators,
 * The 'Space' lexical priors, or seed words, used to train the semi-supervised LDA model, validated by Human annotators.
+
+## Engineering Models Migration to Knowledge Graph
+The code stored in this repository was used to generate results presented at the 9th International Systems & Concurrent 
+Engineering for Space Applications Conference (SECESA 2020), a digital event held in October 2020. 
+The paper 'From engineering models to knowledge graph: delivering new insights into models' is available on [researchgate](https://www.researchgate.net/publication/344451299_From_Engineering_Models_to_Knowledge_Graph_Delivering_New_Insights_Into_Models).
+
+**The code allows to automatically migrate Engineering Models based on the ECSS-E-TM-10-25A TM (in our case exported from the RHEA CDP4-CE platform), to a **[Grakn](https://grakn.ai/)** Knowledge Graph (KG). Code is also provided to infer a new type of relationship isIncludedInMassBudget within the graph, and automatically generate a dry mass budget for each design option. Finally, a pipeline to train a doc2vec model with the Gensim Python library, embed requirements sets found in the populated KG and assess their similarity with cosine similarity is provided.**
+
+Comment: Still waiting on consent from original owner of the training set (for the doc2vec model) to share her database here.
