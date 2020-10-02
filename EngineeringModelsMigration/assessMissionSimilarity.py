@@ -51,6 +51,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
+import pickle
 
 # -------------------------------------------------------------
 # USER INPUTS
@@ -58,7 +59,7 @@ from tqdm import tqdm
 keyspace_name="mergedmodels3" # Name of Grakn keyspace where the Engineering Models are stored
 trainNewModel = 0  # If 1, will train new model model2train  | If 0, will load model model2load
 model2train = 'new_model' # Name of Model to be trained when trainNewModel = 1
-model2load = 'new_ecssd2v' # Name of Model to be loaded when trainNewModel = 0
+model2load = 'doc2vecModel' # Name of Model to be loaded when trainNewModel = 0
 doEvaluationNewModel = 0 # To save time, set to O and evaluate your new model with the rqrmt similarity results (Part 3)
 # Otherwise set to 1 - Only relevant when trainNewModel = 1.
 
@@ -190,7 +191,15 @@ if trainNewModel:
     model = gensim.models.doc2vec.Doc2Vec(vector_size=300, min_count=1, epochs=400, window=15, dm=0, negative= 5, sample= 1e-5)
     model.build_vocab(corpus_training)
     model.train(corpus_training, total_examples=model.corpus_count, epochs=model.epochs)
-    model.save(model2train+".model")
+
+    # save the model to disk - pickle
+    filename = model2train+'.sav'
+    pickle.dump(model, open(filename, 'wb'))
+    print('model saved')
+
+    # save without pickle (optional)
+    # model.save(model2train+".model")
+
     print("Model", model2train,"Saved")
 
     # Accuracy Evaluation
@@ -219,7 +228,8 @@ else:
     print("\nPart II: Load PreTrained Doc2Vec Model")
     print('-------------------------------- \n')
     # Load saved model
-    model = Doc2Vec.load( model2load+".model")
+    model = pickle.load(open(model2load+".sav", 'rb'))
+    #model = Doc2Vec.load( model2load+".model")
     print('Model', model2load, 'loaded')
 
 # Embed requirements sets into representative vectors and compare with cosine similarity
