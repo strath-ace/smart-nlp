@@ -31,4 +31,4 @@ The paper 'From engineering models to knowledge graph: delivering new insights i
 
 **The code allows to automatically migrate Engineering Models based on the ECSS-E-TM-10-25A TM (in our case exported from the RHEA CDP4-CE platform), to a **[Grakn](https://grakn.ai/)** Knowledge Graph (KG). Code is also provided to infer a new type of relationship isIncludedInMassBudget within the graph, and automatically generate a dry mass budget for each design option. Finally, a pipeline to train a doc2vec model with the Gensim Python library, embed requirements sets found in the populated KG and assess their similarity with cosine similarity is provided.**
 
-Comment: Still waiting on consent from original owner of the training set (for the doc2vec model) to share her database here.
+Comment: The authors warmly thank Sabrina Mirtcheva and Serge Valera from ESA for kindly providing the ECSS requirements data set used to train the doc2vec model. This data set is based on the EARM_ECSS_export(DOORS-v0.7_May2019).xlsx document that can be found [here](https://ecss.nl/standards/downloads/earm/).
